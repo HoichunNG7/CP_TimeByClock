@@ -3,6 +3,10 @@ using namespace std;
 
 #include "CP_TimeByClock.h"
 
+// 吴海隽 Hoichun Ng
+// 清华大学软件学院
+// School of Software, Tsinghua University, Beijing, China
+
 void CP_TimeByClock::getStrt()
 {
 	strt = clock();
@@ -28,6 +32,6 @@ void CP_TimeByClock::printIntv()
 	else if (sec >= 1)
 		cout << "Time spent is " << sec << " second(s)" << endl;
 	else
-		cout << "Time spent is " << result << " millisecond(s)" << endl;
+		cout << "Time spent is " << 1000 * sec << " millisecond(s)" << endl;
 	return;
 }
